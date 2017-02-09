@@ -5,9 +5,9 @@
 </head>
 <body>
 		<form name="calculator" method = "post" action="process.php" >
-			Number1=<input type="textfield" name="number1" value="">
+			Number1=<input type="text" name="number1" value="" />
 			<br>
-			Number2=<input type="textfield" name="number2" value="">
+			Number2=<input type="text" name="number2" value="" />
 			<br>
 			<select name="action">
 				<option value="add">Add</option>
