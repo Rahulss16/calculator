@@ -1,12 +1,16 @@
 <?php
+session_start();
 include_once("class/math.php");
 	if(isset($_POST)){
 		
 		$math = new Math($_POST);
 		if(count($math -> error) > 0){
-			print_r($math -> error);
+			$_SESSION['errors'] = $math->error;
+			header('location:index.php');
+
 			die;
 		}else{
+            $_SESSION['errors'] = '';
 			$action = (!empty($_POST['action'])) ? $_POST['action']:'';
 		}
 	}

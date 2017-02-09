@@ -1,9 +1,19 @@
+<?php
+session_start();
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
 	<title> Calculator</title>
 </head>
 <body>
+
+<?php
+    if (!empty($_SESSION['error'])) {
+       print_r($_SESSION['error']);
+    }
+?>
 		<form name="calculator" method = "post" action="process.php" >
 			Number1=<input type="text" name="number1" value="" />
 			<br>
