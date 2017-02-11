@@ -56,7 +56,35 @@ class Math{
                     continue;
             }
             echo " are prime numbers between $n1 and $n2.";
+        }
+        function even_no(){
+	        $n1=$_POST['number1'];
+	        $n2=$_POST['number2'];
 
+            for($i=$n1; $i<=$n2;$i++) {
+                if (($i % 2) == 0) {
+                    echo $i." <br> ";
+                }
+                 else
+                    continue;
+            }
+            echo " are even numbers between  $n1 and $n2.";
+	    }
+	    function odd_no(){
+            $n1=$_POST['number1'];
+            $n2=$_POST['number2'];
+            for ($i=$n1;$i<=$n2;$i++){
+                if (($i % 2)!=0){
+                    echo $i."<br>";
+                }else
+                    continue;
+            }
+            echo " are odd numbers between $n1 and $n2.";
+        }
+        function square_root(){
+	        $n1=$_POST['number1'];
+            echo sqrt($n1) . "<br>";
+	        echo "is square of $n1 ";
         }
 }
 

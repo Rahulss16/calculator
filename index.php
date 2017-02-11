@@ -23,9 +23,12 @@ session_start();
 				<option value="add">Add</option>
 				<option value="sub">Subtractor</option>
 				<option value="multiply">Multiply</option>
-				<option value="divied">Divied</option>
+				<option value="divied">Division</option>
 				<option value="modulus">%</option>
                 <option value="prime_no">Prime No.</option>
+                <option value="even_no">Even No.</option>
+                <option value="odd_no">Odd No.</option>
+                <option value="square_root">Square Root</option>
 			</select>
 			<br><br>
 			<input type="submit" name="submit" value="submit">

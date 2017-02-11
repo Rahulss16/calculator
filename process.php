@@ -34,6 +34,15 @@ switch ($action){
     case "prime_no":
         $result = $math ->prime_no();
         break;
+    case "even_no":
+        $result = $math ->even_no();
+        break;
+    case "odd_no":
+        $result = $math ->odd_no();
+        break;
+    case "square_root":
+        $result = $math ->square_root();
+        break;
 }
 echo $result;
 
