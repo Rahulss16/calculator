@@ -1,23 +1,6 @@
 <?php
 session_start();
 include_once("class/math.php");
-        $n1=$_POST['number1'];
-        $n2=$_POST['number2'];
-
-            for($i=$n1; $i<=$n2;$i++)
-            {
-                if($i==2 || $i==3 || $i==5 || $i==7)
-                {
-                    echo " $i";
-                }
-                else if(($i%2)!= 0 &&($i%3)!=0 && ($i%5)!=0 && ($i%7)!=0)
-                {
-                    echo " $i";
-                }
-                else
-                    continue;
-            }
-            echo " are prime numbers between $n1 and $n2.";
 
 if(isset($_POST)){
 		
@@ -48,6 +31,9 @@ switch ($action){
 	case "modulus":
 		$result = $math -> modulus();
 		break;
+    case "prime_no":
+        $result = $math ->prime_no();
+        break;
 }
 echo $result;
 

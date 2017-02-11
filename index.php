@@ -25,12 +25,11 @@ session_start();
 				<option value="multiply">Multiply</option>
 				<option value="divied">Divied</option>
 				<option value="modulus">%</option>
+                <option value="prime_no">Prime No.</option>
 			</select>
 			<br><br>
 			<input type="submit" name="submit" value="submit">
             <br><br>
-            <input type="submit" name="submit" value="Find Prime Number">
-			<br><br>
 			<!--calculate=<input type="calculate" value="<?php echo $result;?>">
 			-->
 		</form>
