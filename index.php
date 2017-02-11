@@ -27,7 +27,9 @@ session_start();
 				<option value="modulus">%</option>
 			</select>
 			<br><br>
-			<input type="submit" name="submit" value="submit"> 
+			<input type="submit" name="submit" value="submit">
+            <br><br>
+            <input type="submit" name="submit" value="Find Prime Number">
 			<br><br>
 			<!--calculate=<input type="calculate" value="<?php echo $result;?>">
 			-->
