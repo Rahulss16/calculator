@@ -15,6 +15,7 @@ if(isset($_POST)){
 			$action = (!empty($_POST['action'])) ? $_POST['action']:'';
 		}
 	}
+
 switch ($action){
 	case "add":
 		echo $result = $math->add(); die;
