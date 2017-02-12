@@ -11,7 +11,7 @@ class Math{
 		}else{
 			$this->error[] = 'please enter number1';
 		}
-		if(!empty($post['number2'])){
+		if(!empty($post['number2']) || $post['action'] == 'square_root'){
 			$this->number2 = $post['number2'];
 		}else{
 			$this->error[] = 'please enter number2';
@@ -39,10 +39,7 @@ class Math{
 		return $result;
 	}
 	    function prime_no(){
-            $n1=$_POST['number1'];
-            $n2=$_POST['number2'];
-
-            for($i=$n1; $i<=$n2;$i++)
+          for($i=$this->number1; $i<=$this->number2;$i++)
             {
                 if($i==2 || $i==3 || $i==5 || $i==7)
                 {
@@ -55,36 +52,30 @@ class Math{
                 else
                     continue;
             }
-            echo " are prime numbers between $n1 and $n2.";
+            echo " are prime numbers between $this->number1 and $this->number2.";
         }
         function even_no(){
-	        $n1=$_POST['number1'];
-	        $n2=$_POST['number2'];
-
-            for($i=$n1; $i<=$n2;$i++) {
+            for($i=$this->number1; $i<=$this->number2;$i++) {
                 if (($i % 2) == 0) {
                     echo $i." <br> ";
                 }
                  else
                     continue;
             }
-            echo " are even numbers between  $n1 and $n2.";
+            echo " are even numbers between  $this->number1 and $this->number2.";
 	    }
 	    function odd_no(){
-            $n1=$_POST['number1'];
-            $n2=$_POST['number2'];
-            for ($i=$n1;$i<=$n2;$i++){
+            for ($i=$this->number1;$i<=$this->number2;$i++){
                 if (($i % 2)!=0){
                     echo $i."<br>";
                 }else
                     continue;
             }
-            echo " are odd numbers between $n1 and $n2.";
+            echo " are odd numbers between $this->number1 and $this->number2 .";
         }
         function square_root(){
-	        $n1=$_POST['number1'];
-            echo sqrt($n1) . "<br>";
-	        echo "is square of $n1 ";
+            echo sqrt($this->number1) . "<br>";
+	        echo "is square root of $this->number1 ";
         }
 }
 
