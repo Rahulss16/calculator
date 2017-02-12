@@ -44,6 +44,9 @@ switch ($action){
     case "square_root":
         $result = $math ->square_root();
         break;
+    case "date":
+        $result = $math ->date();
+        break;
 }
 echo $result;
 

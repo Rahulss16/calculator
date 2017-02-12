@@ -77,6 +77,12 @@ class Math{
             echo sqrt($this->number1) . "<br>";
 	        echo "is square root of $this->number1 ";
         }
+        function date(){
+            $date1=date_create("$this->number1");
+            $date2=date_create("$this->number2");
+            $diff=date_diff($date1,$date2);
+            echo $diff->format("%R%a days");
+        }
 }
 
 ?>

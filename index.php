@@ -29,6 +29,7 @@ session_start();
                 <option value="even_no">Even No.</option>
                 <option value="odd_no">Odd No.</option>
                 <option value="square_root">Square Root</option>
+                <option value="date">Get Date Difference</option>
 			</select>
 			<br><br>
 			<input type="submit" name="submit" value="submit">
